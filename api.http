@@ -1,0 +1,8 @@
+@host = localhost:8080
+@baseUrl = http://{{host}}/v1
+@contentType = application/json
+
+
+### Health check
+GET {{baseUrl}}/health
+Accept: {{contentType}}
