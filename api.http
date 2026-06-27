@@ -18,7 +18,26 @@ Content-Type: {{contentType}}
 }
 
 ### ── Variables  ────────────────────────
-@postId = 4
+@postId = 6
 
 ### Get posts by id
 GET {{baseUrl}}/posts/{{postId}}
+
+
+### ── Variables  ────────────────────────
+@deletePostId = 5
+
+### Delete posts by id
+DELETE  {{baseUrl}}/posts/{{deletePostId}}
+
+
+### ── Variables  ────────────────────────
+@updatePostId = 6
+
+### Update Post
+PATCH  {{baseUrl}}/posts/{{updatePostId}}
+Content-Type: {{contentType}}
+
+{
+  "title": "HELLO WORLD"
+}
