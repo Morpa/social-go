@@ -16,3 +16,9 @@ Content-Type: {{contentType}}
   "content" : "Hey this is my first post =D",
   "tags": ["tag1"]
 }
+
+### ── Variables  ────────────────────────
+@postId = 4
+
+### Get posts by id
+GET {{baseUrl}}/posts/{{postId}}
