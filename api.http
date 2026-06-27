@@ -6,3 +6,13 @@
 ### Health check
 GET {{baseUrl}}/health
 Accept: {{contentType}}
+
+### Create Post
+POST {{baseUrl}}/posts
+Content-Type: {{contentType}}
+
+{
+  "title": "New title",
+  "content" : "Hey this is my first post =D",
+  "tags": ["tag1"]
+}
