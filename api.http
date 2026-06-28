@@ -41,3 +41,10 @@ Content-Type: {{contentType}}
 {
   "title": "HELLO WORLD"
 }
+
+
+### ── Variables  ────────────────────────
+@userId = 6
+
+### Get users by id
+GET {{baseUrl}}/users/{{userId}}
