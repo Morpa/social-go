@@ -48,3 +48,28 @@ Content-Type: {{contentType}}
 
 ### Get users by id
 GET {{baseUrl}}/users/{{userId}}
+
+
+
+### ── Variables  ────────────────────────
+@followUserId = 6
+
+### Put follow users by id
+PUT  {{baseUrl}}/users/{{followUserId}}/follow
+Content-Type: {{contentType}}
+
+{
+  "user_id": 71
+}
+
+
+### ── Variables  ────────────────────────
+@unFollowUserId = 6
+
+### Put follow users by id
+PUT  {{baseUrl}}/users/{{unFollowUserId}}/unfollow
+Content-Type: {{contentType}}
+
+{
+  "user_id": 70
+}
