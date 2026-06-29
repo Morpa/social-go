@@ -73,3 +73,11 @@ Content-Type: {{contentType}}
 {
   "user_id": 70
 }
+
+
+### ── Variables  ────────────────────────
+@unFollowUserId = 6
+
+### Get user feed
+GET  {{baseUrl}}/users/feed
+Content-Type: {{contentType}}
