@@ -64,10 +64,10 @@ Content-Type: {{contentType}}
 
 
 ### ── Variables  ────────────────────────
-@unFollowUserId = 6
+@unfollowUserId = 6
 
 ### Put follow users by id
-PUT  {{baseUrl}}/users/{{unFollowUserId}}/unfollow
+PUT  {{baseUrl}}/users/{{unfollowUserId}}/unfollow
 Content-Type: {{contentType}}
 
 {
@@ -75,9 +75,6 @@ Content-Type: {{contentType}}
 }
 
 
-### ── Variables  ────────────────────────
-@unFollowUserId = 6
-
 ### Get user feed
-GET  {{baseUrl}}/users/feed
+GET  {{baseUrl}}/users/feed?limit=10&search=Tips
 Content-Type: {{contentType}}

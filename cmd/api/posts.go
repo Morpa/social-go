@@ -37,7 +37,7 @@ func (app *application) createPostHandler(w http.ResponseWriter, r *http.Request
 		Content: payload.Content,
 		Tags:    payload.Tags,
 		// TODO: Change after auth
-		UserId: 1,
+		UserID: 1,
 	}
 
 	ctx := r.Context()
